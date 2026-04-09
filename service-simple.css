@@ -1,0 +1,33 @@
+.site-nav a.active {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.page-hero {
+  padding: 56px 0 24px;
+}
+
+.page-hero h1 {
+  margin: 10px 0 0;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+
+.page-lead {
+  max-width: 760px;
+  margin: 16px 0 0;
+  color: var(--text-soft);
+  font-size: 1rem;
+}
+
+.service-card p {
+  max-width: 480px;
+}
+
+@media (max-width: 640px) {
+  .page-hero {
+    padding-top: 40px;
+  }
+}

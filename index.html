@@ -3,41 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="株式会社CCシステムズは、ITインフラの設計・構築・運用改善を支援する会社です。金融系で培った品質で、安心して任せられる基盤づくりを支えます。">
   <title>株式会社CCシステムズ</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index-simple.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-  <header>
-    <div class="container">
-      <div class="logo"><a href="index.html">株式会社CCシステムズ</a></div>
-      <nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CC</span>
+        <span class="brand-text">株式会社CCシステムズ</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
         <a href="service.html">サービス</a>
-        <a href="inframanager.html">プロダクト</a>
+        <a href="product.html">プロダクト</a>
         <a href="about.html">代表挨拶</a>
         <a href="company.html">会社概要</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>株式会社CCシステムズ</h1>
-      <p class="hero-en">CC Systems Co., Ltd.</p>
-      <p class="hero-copy">ITインフラの専門家として、システム構築・運用・自動化をトータルでサポートします。</p>
-      <div class="hero-links">
-        <a href="service.html" class="btn">サービスを見る</a>
-        <a href="company.html#contact" class="btn btn-outline">お問い合わせ</a>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">IT Infrastructure Partner</p>
+          <h1>インフラ一筋。</h1>
+          <p class="hero-lead">
+            <span class="hero-lead-line">株式会社CCシステムズは、サーバー・ネットワーク・クラウドの設計から運用改善までを支援する会社です。</span>
+            <span class="hero-lead-line">金融系で培った品質をベースに、小さなチームでも無理なく回る基盤づくりをお手伝いします。</span>
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="service.html">サービスを見る</a>
+            <a class="btn btn-secondary" href="company.html#contact">お問い合わせ</a>
+          </div>
+          <div class="hero-points">
+            <span><i class="fa-solid fa-check"></i> 金融系クライアント継続支援</span>
+            <span><i class="fa-solid fa-check"></i> クラウド / オンプレ両対応</span>
+            <span><i class="fa-solid fa-check"></i> 運用改善・自動化まで支援</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Services</p>
+          <h2>事業内容</h2>
+          <p class="section-copy">
+            構築だけで終わらず、運用に入ったあとも困りにくい状態を目指して支援します。
+          </p>
+        </div>
+
+        <div class="card-grid two-column">
+          <article class="info-card">
+            <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>インフラ構築・運用支援</h3>
+            <p>
+              サーバー・ネットワーク・仮想化・クラウドの設計から構築、運用まで対応。
+              品質を重視しながら、現場で回る基盤を一緒に整えます。
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>業務自動化・ツール開発</h3>
+            <p>
+              手作業の多い運用を見直し、スクリプトや社内ツールで効率化します。
+              AIの活用も含めて、実務に合う形で提案します。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Strengths</p>
+          <h2>選ばれる理由</h2>
+          <p class="section-copy">
+            難しいことをそのまま渡さず、安心して相談できる進め方を大切にしています。
+          </p>
+        </div>
+
+        <div class="card-grid three-column">
+          <article class="info-card compact">
+            <h3>金融レベルの品質感</h3>
+            <p>厳格な基準が求められる現場で培った視点をベースに支援します。</p>
+          </article>
+          <article class="info-card compact">
+            <h3>説明がわかりやすい</h3>
+            <p>専門用語に偏りすぎず、判断しやすい形で状況を整理して共有します。</p>
+          </article>
+          <article class="info-card compact">
+            <h3>継続支援に強い</h3>
+            <p>一度作って終わりではなく、運用改善や標準化まで伴走します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="product-banner">
+          <div class="product-copy">
+            <p class="section-label">Product</p>
+            <h2>Index Guardian</h2>
+            <p>
+              設計書管理、機器管理、EOSL管理、課題管理をまとめて扱える、
+              インフラ運用向けの実務ツールです。
+            </p>
+          </div>
+          <a class="btn btn-primary" href="product.html">プロダクトを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-box" id="contact">
+          <p class="section-label">Contact</p>
+          <h2>まずはお気軽にご相談ください</h2>
+          <p>
+            お仕事のご相談・お見積もりはメールで受け付けています。
+            現状の課題がまだ整理できていない段階でも大丈夫です。
+          </p>
+          <a class="btn btn-primary" href="mailto:info@cc-systems.co.jp">info@cc-systems.co.jp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 株式会社CCシステムズ</p>
+      <div class="footer-links">
+        <a href="service.html">サービス</a>
+        <a href="product.html">プロダクト</a>
+        <a href="company.html">会社概要</a>
       </div>
     </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 株式会社CCシステムズ</p>
-    </div>
   </footer>
-
 </body>
 </html>

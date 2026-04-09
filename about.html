@@ -3,62 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="株式会社CCシステムズ代表、行成良樹の挨拶と歩みをご紹介します。">
   <title>代表挨拶 | 株式会社CCシステムズ</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index-simple.css">
+  <link rel="stylesheet" href="about-simple.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-  <header>
-    <div class="container">
-      <div class="logo"><a href="index.html">株式会社CCシステムズ</a></div>
-      <nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CC</span>
+        <span class="brand-text">株式会社CCシステムズ</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
         <a href="service.html">サービス</a>
-        <a href="inframanager.html">プロダクト</a>
-        <a href="about.html" class="active">代表挨拶</a>
+        <a href="product.html">プロダクト</a>
+        <a class="active" href="about.html" aria-current="page">代表挨拶</a>
         <a href="company.html">会社概要</a>
       </nav>
     </div>
   </header>
 
-  <section class="page-hero">
-    <div class="container">
-      <h1>代表挨拶</h1>
-    </div>
-  </section>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-label">About</p>
+        <h1>代表挨拶</h1>
+      </div>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <p class="about-name">代表取締役社長　行成 良樹（ゆきなり よしき）</p>
-          <p>28歳でITエンジニアとしてのキャリアをスタートし、サーバー・ネットワーク・仮想化・クラウドと領域を広げながら、5年後に株式会社CCシステムズを設立しました。</p>
-          <p>東京駅エリアの金融系クライアントを中心に、6年以上にわたる継続支援の実績があります。金融業界で培った厳格なセキュリティ基準と高い品質意識を、すべてのお客様へ提供しています。</p>
-          <p>ITに不安を抱えるお客様に対して、専門家として正直に、わかりやすく向き合うことを大切にしています。</p>
-        </div>
-        <div class="about-career">
-          <div class="career-item">
-            <span class="career-age">2015年</span>
-            <span class="career-desc">IT業界へ。インフラ全般のスキルを積む</span>
-          </div>
-          <div class="career-item">
-            <span class="career-age">2020年</span>
-            <span class="career-desc">株式会社CCシステムズ 設立</span>
-          </div>
-          <div class="career-item">
-            <span class="career-age">現在</span>
-            <span class="career-desc">金融系クライアントを中心に継続支援</span>
-          </div>
+    <section class="section">
+      <div class="container">
+        <div class="about-layout">
+          <article class="message-card">
+            <p class="message-name">代表取締役社長　行成 良樹（ゆきなり よしき）</p>
+            <p>
+              28歳でITエンジニアとしてのキャリアをスタートし、サーバー・ネットワーク・
+              仮想化・クラウドと領域を広げながら経験を積んできました。
+            </p>
+            <p>
+              その後、現場で求められる品質と説明責任の両立を、もっと柔軟に実現したいと考え、
+              株式会社CCシステムズを設立しました。
+            </p>
+            <p>
+              東京駅エリアの金融系クライアントを中心に、10年以上にわたる継続支援の実績があります。
+              金融業界で培った厳格な品質意識を、すべてのお客様にわかりやすい形で届けることを大切にしています。
+            </p>
+            <p>
+              ITに不安を抱えるお客様に対しても、専門家として正直に、わかりやすく向き合うこと。
+              それが、CCシステムズの支援の土台です。
+            </p>
+          </article>
+
+          <aside class="career-card">
+            <p class="section-label">Career</p>
+            <div class="career-item">
+              <span class="career-year">2015</span>
+              <div class="career-body">
+                <strong>IT業界へ</strong>
+                <p>インフラエンジニアとしてキャリアを開始し、インフラ全般のスキルを積む。</p>
+              </div>
+            </div>
+            <div class="career-item">
+              <span class="career-year">2020</span>
+              <div class="career-body">
+                <strong>株式会社CCシステムズ 設立</strong>
+                <p>品質と説明力の両方を大切にする支援体制を、自らの会社として形にする。</p>
+              </div>
+            </div>
+            <div class="career-item">
+              <span class="career-year">Now</span>
+              <div class="career-body">
+                <strong>継続支援を中心に活動</strong>
+                <p>金融系クライアントを中心に、基盤整備、運用改善、自動化の支援を続けている。</p>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 株式会社CCシステムズ</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 株式会社CCシステムズ</p>
+      <div class="footer-links">
+        <a href="index.html">トップ</a>
+        <a href="service.html">サービス</a>
+        <a href="product.html">プロダクト</a>
+        <a href="company.html">会社概要</a>
+      </div>
     </div>
   </footer>
-
 </body>
 </html>
