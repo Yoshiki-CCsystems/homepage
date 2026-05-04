@@ -22,6 +22,7 @@
   font-size: 1rem;
 }
 
+.support-link-panel,
 .product-showcase,
 .summary-card,
 .table-card,
@@ -32,6 +33,32 @@
   box-shadow: var(--shadow);
 }
 
+.support-link-panel {
+  position: relative;
+  overflow: hidden;
+  padding: 42px;
+  background: linear-gradient(135deg, #123764 0%, #1e6fd9 58%, #35b4ff 100%);
+  border: 0;
+  color: #fff;
+  box-shadow: 0 28px 64px rgba(30, 111, 217, 0.28);
+}
+
+.support-link-panel::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -120px;
+  width: 56%;
+  height: 220px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0));
+  transform: rotate(-12deg);
+}
+
+.support-link-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
 .product-showcase {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
@@ -40,6 +67,7 @@
   padding: 32px;
 }
 
+.support-link-panel h2,
 .product-showcase h2,
 .summary-card h3,
 .table-card h3,
@@ -49,22 +77,54 @@
   letter-spacing: -0.04em;
 }
 
+.support-link-panel h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+  color: #fff;
+}
+
 .product-showcase h2,
 .note-panel h2 {
   font-size: clamp(2rem, 4vw, 2.8rem);
   line-height: 1.08;
 }
 
+.support-link-panel p,
 .product-showcase p,
 .summary-card p,
 .table-card p {
   color: var(--text-soft);
 }
 
+.support-link-panel p {
+  margin: 14px 0 0;
+}
+
+.support-link-panel .section-label {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.support-link-panel p,
+.support-link-note {
+  color: rgba(255, 255, 255, 0.92);
+}
+
 .product-showcase p + p,
 .summary-card p + p,
 .table-card p + p {
   margin-top: 12px;
+}
+
+.support-link-note {
+  font-size: 0.9rem;
+}
+
+.support-link-panel .btn-secondary {
+  background: #fff;
+  border-color: #fff;
+  color: var(--accent);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.22);
 }
 
 .badge-list {
@@ -215,11 +275,20 @@
     padding-top: 40px;
   }
 
+  .support-link-panel,
   .product-showcase,
   .summary-card,
   .table-card,
   .note-panel {
     padding: 24px;
+  }
+
+  .support-link-panel {
+    padding: 30px 24px;
+  }
+
+  .support-link-panel .hero-actions .btn {
+    width: 100%;
   }
 
   .role-table th,

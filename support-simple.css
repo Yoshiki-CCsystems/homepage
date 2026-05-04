@@ -1,0 +1,157 @@
+.site-nav a.active {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.page-hero {
+  padding: 56px 0 24px;
+}
+
+.page-hero h1 {
+  margin: 10px 0 0;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  letter-spacing: 0;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.page-lead {
+  max-width: 780px;
+  margin: 16px 0 0;
+  color: var(--text-soft);
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.support-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 32px;
+}
+
+.support-card h2 {
+  margin: 10px 0 0;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.support-card p {
+  margin: 14px 0 0;
+  color: var(--text-soft);
+  overflow-wrap: anywhere;
+}
+
+.support-cta-panel {
+  background: linear-gradient(135deg, #123764 0%, #1e6fd9 100%);
+  border-radius: 24px;
+  padding: 40px 32px;
+  color: #fff;
+  text-align: center;
+}
+
+.support-cta-panel .section-label {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.support-cta-panel h2 {
+  margin: 10px 0 0;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.support-cta-panel p {
+  margin: 14px auto 0;
+  max-width: 640px;
+  color: rgba(255, 255, 255, 0.92);
+  overflow-wrap: anywhere;
+}
+
+.support-cta-panel .hero-actions {
+  justify-content: center;
+}
+
+.support-cta-panel .btn-primary {
+  background: #fff;
+  color: var(--accent);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.support-cta-note {
+  margin-top: 18px;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.support-faq {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 32px;
+}
+
+.support-faq h2 {
+  margin: 10px 0 22px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.faq-list {
+  margin: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.faq-list dt {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.faq-list dd {
+  margin: 8px 0 0;
+  color: var(--text-soft);
+  overflow-wrap: anywhere;
+}
+
+.support-footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .page-hero {
+    padding-top: 40px;
+  }
+
+  .support-card,
+  .support-cta-panel,
+  .support-faq {
+    padding: 24px;
+  }
+
+  .support-footer-actions {
+    flex-direction: column;
+  }
+
+  .support-footer-actions .btn {
+    width: 100%;
+  }
+
+  .support-cta-panel .btn {
+    width: 100%;
+    min-height: auto;
+    padding: 12px 18px;
+    white-space: normal;
+  }
+}
