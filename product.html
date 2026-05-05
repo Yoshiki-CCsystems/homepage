@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Index Guardian は、設計書管理、機器のEOSL管理、課題管理を一つにまとめる無料のインフラ運用向けWebアプリケーションです。">
   <title>Index Guardian | 株式会社CCシステムズ</title>
+  <link rel="icon" type="image/png" href="images/Index_Guardian_icon.png">
+  <link rel="apple-touch-icon" href="images/Index_Guardian_icon.png">
   <link rel="stylesheet" href="index-simple.css">
   <link rel="stylesheet" href="product-simple.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -26,16 +28,28 @@
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="page-hero hero-dark">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+      </div>
       <div class="container">
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="section-label">Product</p>
-            <h1>Index Guardian</h1>
-            <p class="hero-tagline">インフラ運用の情報を、ひとつに。</p>
+            <div class="product-headline">
+              <div class="product-icon-mark">
+                <span class="product-icon-glow" aria-hidden="true"></span>
+                <img src="images/Index_Guardian_icon.png" alt="Index Guardian アイコン">
+              </div>
+              <div class="product-headline-text">
+                <h1>Index Guardian</h1>
+              </div>
+            </div>
+            <p class="hero-tagline">ドキュメントを探さない</p>
             <p class="page-lead">
-              現場を知るエンジニアが開発した、インフラ運用管理Webアプリケーション。<br>
-              設計書管理、機器管理、EOSL管理、課題管理、監査ログまで、<br>
+              現役のインフラエンジニアが開発した、インフラ運用管理アプリケーション。<br>
+              設計書管理、機器管理、EOSL管理、課題管理まで、<br>
               散らばる情報を整理し、チームの運用を支えます。<br>
               個人・法人問わず無料でご利用いただけ、オフライン環境でも動作します。
             </p>
@@ -44,7 +58,6 @@
               <span class="badge"><i class="fa-solid fa-server"></i>機器管理</span>
               <span class="badge"><i class="fa-regular fa-calendar"></i>EOSL管理</span>
               <span class="badge"><i class="fa-solid fa-list-check"></i>課題管理</span>
-              <span class="badge"><i class="fa-solid fa-shield-halved"></i>監査ログ</span>
             </div>
             <div class="hero-actions">
               <a class="btn btn-primary" href="https://github.com/Yoshiki-CCsystems/Index-Guardian/releases" target="_blank" rel="noopener">
@@ -59,16 +72,18 @@
               <i class="fa-solid fa-chevron-right support-inline-chevron"></i>
             </a>
           </div>
-          <figure class="app-shot">
+          <figure class="app-shot app-shot-floating">
             <img src="images/IndexGuardian_toppage.PNG" alt="Index Guardian のダッシュボード画面">
           </figure>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-frame">
       <div class="container">
-        <h2 class="section-title-center">こんな課題に向いています</h2>
+        <div class="section-heading">
+          <h2 class="section-title-center">こんな課題を解決します</h2>
+        </div>
         <div class="problem-grid">
           <article class="problem-card">
             <div class="card-icon"><i class="fa-regular fa-folder-open"></i></div>
@@ -94,34 +109,61 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-frame">
       <div class="container">
-        <h2 class="section-title-center">主な機能</h2>
+        <div class="section-heading">
+          <h2 class="section-title-center">主な機能</h2>
+        </div>
         <div class="feature-grid">
           <article class="feature-card">
             <div class="card-icon"><i class="fa-regular fa-folder"></i></div>
             <h3>設計書管理</h3>
-            <p>標準書式されたテンプレートで設計書を効率的に作成・管理できます。</p>
+            <p>標準書式されたテンプレートで設計書を効率的に作成・管理。<br>ファイル添付にも対応。</p>
           </article>
           <article class="feature-card">
             <div class="card-icon"><i class="fa-solid fa-server"></i></div>
             <h3>機器・EOSL管理</h3>
-            <p>機器情報とEOSLを一元管理し、サポート期限の可視化と計画を支援します。</p>
+            <p>機器情報とEOSLを一元管理し、サポート期限の可視化と<br>計画を支援。</p>
           </article>
           <article class="feature-card">
             <div class="card-icon"><i class="fa-solid fa-clipboard-list"></i></div>
             <h3>課題管理</h3>
-            <p>対応状況や履歴を見える化し、チームでの確実な課題解決をサポートします。</p>
+            <p>対応状況や履歴を見える化し、チームでの確実な課題解決を<br>サポート。</p>
           </article>
           <article class="feature-card">
-            <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="card-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+            <h3>データ同期</h3>
+            <p>エンドユーザーとベンダー間の情報連携を意識したデータ同期機能を装備。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-frame">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="section-title-center">セキュリティ</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+            <h3>HTTPS対応</h3>
+            <p>通信経路を暗号化し、社内ネットワーク上でも安全な情報の<br>やり取りを実現。</p>
+          </article>
+          <article class="feature-card">
+            <div class="card-icon"><i class="fa-solid fa-lock"></i></div>
+            <h3>暗号化</h3>
+            <p>添付ファイル、バックアップ、認証情報を多層で暗号化。情報流出への対策を徹底。</p>
+          </article>
+          <article class="feature-card">
+            <div class="card-icon"><i class="fa-solid fa-user-lock"></i></div>
+            <h3>ロールベースアクセス制御</h3>
+            <p>管理者と一般ユーザーの権限を分離し、機密機能への無許可<br>アクセスを防止。</p>
+          </article>
+          <article class="feature-card">
+            <div class="card-icon"><i class="fa-solid fa-clipboard-list"></i></div>
             <h3>監査ログ</h3>
-            <p>操作履歴を自動で記録し、内部統制や監査対応を支援します。</p>
-          </article>
-          <article class="feature-card">
-            <div class="card-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
-            <h3>バックアップ</h3>
-            <p>データのエクスポート／インポートで、バックアップと復元が簡単に行えます。</p>
+            <p>認証・操作・設定変更を時刻と操作者付きで自動記録し、内部統制や監査対応を支援。</p>
           </article>
         </div>
       </div>
