@@ -407,6 +407,74 @@ h2.section-title-center {
   background: linear-gradient(90deg, #35b4ff 0%, #1e6fd9 100%);
 }
 
+.spec-table-wrap {
+  width: 100%;
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(27, 36, 50, 0.05);
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.spec-table tr + tr {
+  border-top: 1px solid var(--line);
+}
+
+.spec-table th,
+.spec-table td {
+  padding: 18px 24px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.spec-table th {
+  width: 220px;
+  background: var(--accent-soft);
+  color: var(--text);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.spec-table th i {
+  margin-right: 10px;
+  color: var(--accent);
+  width: 18px;
+  text-align: center;
+}
+
+.spec-table td {
+  color: var(--text);
+}
+
+.spec-note {
+  display: inline-block;
+  margin-top: 4px;
+  color: var(--text-soft);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .spec-table th,
+  .spec-table td {
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .spec-table th {
+    width: auto;
+    border-bottom: 1px solid var(--line);
+  }
+}
+
 .section.section-frame {
   padding: 24px 0;
 }
