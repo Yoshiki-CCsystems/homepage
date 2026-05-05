@@ -28,47 +28,39 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="section-label">Product</p>
-        <h1>Index Guardian</h1>
-        <p class="page-lead">
-          現場を知り尽くしたインフラエンジニアが作成した、インフラ運用向けの業務管理Webアプリケーションです。
-          インフラ運用に必須である[設計書管理] [機器管理] [EOSL管理] [課題管理]をまとめて扱えます。
-          個人・法人を問わず無料で利用でき、オフライン環境でも動作します。
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="product-showcase">
-          <div>
-            <h2>Index Guardian</h2>
-            <p>
-              Index Guardian は、設計書管理、機器管理、EOSL管理、課題管理をまとめて扱える
-              システム運用者向けのアプリです。
-            </p>
-            <p>
-              情報が Excel、共有フォルダ、口頭に散りやすい運用を整理し、
-              少人数でも状態を追いやすい形に寄せられるよう設計しています。
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="section-label">Product</p>
+            <h1>Index Guardian</h1>
+            <p class="hero-tagline">インフラ運用の情報を、ひとつに。</p>
+            <p class="page-lead">
+              現場を知るエンジニアが開発した、インフラ運用管理Webアプリケーション。<br>
+              設計書管理、機器管理、EOSL管理、課題管理、監査ログまで、<br>
+              散らばる情報を整理し、チームの運用を支えます。<br>
+              個人・法人問わず無料でご利用いただけ、オフライン環境でも動作します。
             </p>
             <div class="badge-list">
-              <span class="badge">設計書管理</span>
-              <span class="badge">機器管理</span>
-              <span class="badge">EOSL管理</span>
-              <span class="badge">課題管理</span>
-              <span class="badge">監査ログ</span>
+              <span class="badge"><i class="fa-regular fa-file-lines"></i>設計書管理</span>
+              <span class="badge"><i class="fa-solid fa-server"></i>機器管理</span>
+              <span class="badge"><i class="fa-regular fa-calendar"></i>EOSL管理</span>
+              <span class="badge"><i class="fa-solid fa-list-check"></i>課題管理</span>
+              <span class="badge"><i class="fa-solid fa-shield-halved"></i>監査ログ</span>
             </div>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="https://github.com/Yoshiki-CCsystems/Index-Guardian/releases" target="_blank" rel="noopener">インストーラーをダウンロード</a>
-              <a class="btn btn-secondary" href="index-guardian.html">詳細を見る</a>
-              <a class="btn btn-secondary" href="support.html">支援金を送る</a>
+              <a class="btn btn-primary" href="https://github.com/Yoshiki-CCsystems/Index-Guardian/releases" target="_blank" rel="noopener">
+                <i class="fa-solid fa-download"></i>無料でダウンロード
+              </a>
+              <a class="btn btn-secondary" href="index-guardian.html">
+                <i class="fa-regular fa-window-maximize"></i>画面を見る
+              </a>
             </div>
+            <a class="support-inline-link" href="#support">
+              <i class="fa-regular fa-heart"></i>開発を応援する
+              <i class="fa-solid fa-chevron-right support-inline-chevron"></i>
+            </a>
           </div>
           <figure class="app-shot">
             <img src="images/1.PNG" alt="Index Guardian のダッシュボード画面">
-            <figcaption class="shot-caption">
-              実際のダッシュボード画面です。トップ画面から設計書、機器、課題の管理へ遷移できます。
-            </figcaption>
           </figure>
         </div>
       </div>
@@ -76,25 +68,27 @@
 
     <section class="section">
       <div class="container">
-        <div class="summary-grid">
-          <article class="summary-card">
-            <h3>こんな課題に向いています</h3>
-            <ul class="info-list">
-              <li><i class="fa-solid fa-check"></i>設計書や関連資料の保管場所が分散している</li>
-              <li><i class="fa-solid fa-check"></i>機器のEOSL期限を見落とさずに追いたい</li>
-              <li><i class="fa-solid fa-check"></i>課題を案件横断で整理して見通しを揃えたい</li>
-              <li><i class="fa-solid fa-check"></i>少人数でも属人化しにくい運用基盤を作りたい</li>
-            </ul>
+        <h2 class="section-title-center">こんな課題に向いています</h2>
+        <div class="problem-grid">
+          <article class="problem-card">
+            <div class="card-icon"><i class="fa-regular fa-folder-open"></i></div>
+            <h3>情報が散らばっている</h3>
+            <p>設計書や資料が各所に点在し、必要な情報を探すのに時間がかかっている。</p>
           </article>
-
-          <article class="summary-card">
-            <h3>主な機能</h3>
-            <ul class="info-list">
-              <li><i class="fa-solid fa-file-lines"></i>設計書の作成、編集、テンプレート管理</li>
-              <li><i class="fa-solid fa-server"></i>管理機器とEOSLの一元管理</li>
-              <li><i class="fa-solid fa-list-check"></i>課題管理と進行状況の可視化</li>
-              <li><i class="fa-solid fa-clock-rotate-left"></i>変更履歴、監査ログ、バックアップ対応</li>
-            </ul>
+          <article class="problem-card">
+            <div class="card-icon"><i class="fa-regular fa-calendar"></i></div>
+            <h3>EOSL管理が大変</h3>
+            <p>サポート期限の把握や更新計画が属人化し、リスクの見落としが心配。</p>
+          </article>
+          <article class="problem-card">
+            <div class="card-icon"><i class="fa-regular fa-comments"></i></div>
+            <h3>課題の共有・管理が難しい</h3>
+            <p>プロジェクト横断の課題管理がうまくできず、対応漏れや二重対応が発生している。</p>
+          </article>
+          <article class="problem-card">
+            <div class="card-icon"><i class="fa-solid fa-user-shield"></i></div>
+            <h3>特定の人に依存している</h3>
+            <p>担当者しか分からない運用が多く、引き継ぎや障害対応に不安がある。</p>
           </article>
         </div>
       </div>
@@ -102,19 +96,32 @@
 
     <section class="section">
       <div class="container">
-        <div class="summary-grid">
-          <article class="table-card">
-            <h3>想定する利用シーン</h3>
-            <p>システムのドキュメント管理にお悩みの企業様におすすめです。データの同期が取れるため、保守ベンダーとの連携にも最適です。</p>
-            <p>台帳と課題をまとめて確認できるため、更改計画や保守運用の土台づくりにも使えます。</p>
+        <h2 class="section-title-center">主な機能</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="card-icon"><i class="fa-regular fa-folder"></i></div>
+            <h3>設計書テンプレート管理</h3>
+            <p>標準書式されたテンプレートで設計書を効率的に作成・管理できます。</p>
           </article>
-
-          <article class="table-card">
-            <h3>運用しやすい権限設計</h3>
-            <p>
-              管理者と一般ユーザーのロールを分けて運用できます。
-              管理者は設定変更やバックアップ、一般ユーザーは日常的な閲覧・更新作業を担当できます。
-            </p>
+          <article class="feature-card">
+            <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>機器・EOSL管理</h3>
+            <p>機器情報とEOSLを一元管理し、サポート期限の可視化と計画を支援します。</p>
+          </article>
+          <article class="feature-card">
+            <div class="card-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3>課題管理</h3>
+            <p>対応状況や履歴を見える化し、チームでの確実な課題解決をサポートします。</p>
+          </article>
+          <article class="feature-card">
+            <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>監査ログ</h3>
+            <p>操作履歴を自動で記録し、内部統制や監査対応を支援します。</p>
+          </article>
+          <article class="feature-card">
+            <div class="card-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+            <h3>バックアップ</h3>
+            <p>データのエクスポート／インポートで、バックアップと復元が簡単に行えます。</p>
           </article>
         </div>
       </div>
@@ -122,18 +129,54 @@
 
     <section class="section" id="support">
       <div class="container">
-        <div class="support-link-panel">
-          <h2>開発支援のお願い</h2>
-          <p>
-            Index Guardian は無料で提供していますが、継続的な開発・保守・検証には
-            費用と時間がかかっています。もしお役に立てていれば、
-            任意で開発支援をご検討いただけると励みになります。
-          </p>
-          <p class="support-link-note">
-            支援の有無で機能差や利用可否は変わりません。
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-secondary" href="support.html">支援金を送る</a>
+        <div class="support-banner">
+          <div class="support-banner-art">
+            <img src="images/icon.png" alt="いつもありがとうございます">
+          </div>
+          <div class="support-banner-body">
+            <h2>Index Guardian を育てる開発支援</h2>
+            <p>Index Guardian は、個人・法人を問わず無料でご利用いただけます。</p>
+            <p>任意の開発支援は、今後の継続的な開発・保守・検証・マニュアル整備・機能改善の原動力になります。</p>
+            <ul class="support-checklist">
+              <li><i class="fa-solid fa-circle-check"></i>新機能の開発・改善</li>
+              <li><i class="fa-solid fa-circle-check"></i>テスト環境や検証作業の強化</li>
+              <li><i class="fa-solid fa-circle-check"></i>マニュアル・ドキュメントの整備</li>
+              <li><i class="fa-solid fa-circle-check"></i>長期的なメンテナンスと品質向上</li>
+            </ul>
+          </div>
+          <div class="support-banner-action">
+            <a class="btn btn-support" href="support.html">
+              <i class="fa-regular fa-heart"></i>開発を応援する
+            </a>
+            <p class="support-banner-note">※ 支援の有無で機能差はありません。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <i class="fa-solid fa-display"></i>
+            <div>
+              <h3>オフライン環境で利用可能</h3>
+              <p>ネットワークがない環境でも安心してご利用いただけます。</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-lock"></i>
+            <div>
+              <h3>あなたのデータはあなたのもの</h3>
+              <p>データはローカルに保存されます。外部に送信されることはありません。</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-people-group"></i>
+            <div>
+              <h3>個人・法人どちらでも無料</h3>
+              <p>利用条件やライセンス管理の心配なく、安心してお使いいただけます。</p>
+            </div>
           </div>
         </div>
       </div>
