@@ -287,6 +287,13 @@ a {
   padding: 30px;
 }
 
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: flex-end;
+}
+
 .contact-box {
   text-align: center;
   padding: 42px 24px;
@@ -344,6 +351,10 @@ a {
     align-items: flex-start;
     text-align: left;
   }
+
+  .product-actions {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 640px) {
@@ -360,6 +371,7 @@ a {
   }
 
   .hero-actions .btn,
+  .product-actions .btn,
   .contact-box .btn {
     width: 100%;
   }
