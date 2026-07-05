@@ -64,16 +64,11 @@ a {
 }
 
 .brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 40px;
   height: 40px;
   border-radius: 12px;
-  background: var(--accent);
-  color: #fff;
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
+  object-fit: cover;
 }
 
 .brand-text {
@@ -171,6 +166,7 @@ a {
   font-size: 0.95rem;
   font-weight: 700;
   border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .btn-primary {
@@ -277,6 +273,16 @@ a {
 .info-card p {
   margin: 10px 0 0;
   color: var(--text-soft);
+}
+
+.card-link {
+  color: var(--accent);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.card-link:hover {
+  text-decoration: underline;
 }
 
 .product-banner {

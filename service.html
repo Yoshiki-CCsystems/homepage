@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CCシステムズのサービス一覧。インフラ構築・運用支援、業務自動化・ツール開発を提供しています。">
+  <meta name="description" content="CCシステムズのサービス一覧。インフラ構築・運用支援、業務自動化・ツール開発、閉域・オンプレ環境に対応したAI導入支援を提供しています。">
   <title>サービス | 株式会社CCシステムズ</title>
   <link rel="stylesheet" href="index-simple.css">
   <link rel="stylesheet" href="service-simple.css">
+  <link rel="icon" type="image/png" href="images/Company_icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <span class="brand-mark">CC</span>
+        <img class="brand-mark" src="images/Company_icon.png" alt="">
         <span class="brand-text">株式会社CCシステムズ</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
@@ -31,14 +32,14 @@
         <p class="section-label">Services</p>
         <h1>サービス</h1>
         <p class="page-lead">
-          ITインフラの専門家として、構築から運用・自動化までトータルで支援します。
+          ITインフラの専門家として、構築・運用からAI導入・業務自動化までトータルで支援します。
         </p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="card-grid two-column">
+        <div class="card-grid three-column">
           <article class="info-card service-card">
             <div class="card-icon"><i class="fa-solid fa-server"></i></div>
             <h3>インフラ構築・運用支援</h3>
@@ -52,11 +53,50 @@
             <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
             <h3>業務自動化・ツール開発</h3>
             <p>
-              AIを活用した業務自動化や社内ツールの開発を行います。
-              繰り返し作業をスクリプトやアプリで置き換え、運用コストの削減を支援します。
+              繰り返し作業をスクリプトや社内ツールで置き換え、運用コストの削減を支援します。
+              Power Automateなど、今お使いの環境を活かした自動化を提案します。
+            </p>
+          </article>
+
+          <article class="info-card service-card">
+            <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3>AI導入支援</h3>
+            <p>
+              生成AIを「試して終わり」にせず、実際の業務に組み込むところまで伴走します。
+              閉域・オンプレ環境でのローカルLLM + RAG構成にも対応します。
             </p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="ai">
+      <div class="container">
+        <article class="info-card ai-detail">
+          <p class="section-label">AI Integration</p>
+          <h2>AI導入支援(閉域・オンプレ環境対応)</h2>
+          <p>
+            生成AIを「試して終わり」にせず、実際の業務に組み込むところまで伴走します。
+          </p>
+          <p>
+            金融系の現場で約10年、セキュリティ・監査・変更管理といったエンタープライズ環境の制約と向き合ってきたインフラエンジニアが、その現場感を前提にAI導入を設計します。
+          </p>
+
+          <h3>特徴</h3>
+          <ul>
+            <li><strong>閉域・オンプレ環境に対応</strong> — データを外部に出せない環境でも、ローカルLLM(Ollama等)+ RAG構成で社内完結型のAI活用を実現します</li>
+            <li><strong>PoCで終わらせない</strong> — テスト設計、手順書、運用引き継ぎまで含めて「現場で使われ続ける形」に落とし込みます</li>
+            <li><strong>既存環境と噛み合わせる</strong> — Microsoft 365 / Teams / Power Automate / 監視ツールなど、今お使いの環境との連携を前提に設計します</li>
+          </ul>
+
+          <h3>取り組み例</h3>
+          <ul>
+            <li>社内ドキュメント・手順書のナレッジ検索(RAG)構築</li>
+            <li>運用業務(アラート整理・問い合わせ対応・ドキュメント作成)へのAI組み込み</li>
+            <li>クラウドAIが使えない環境でのローカルLLM基盤構築</li>
+            <li>AI活用の社内勉強会・定着支援</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -80,6 +120,7 @@
         <a href="product.html">プロダクト</a>
         <a href="about.html">代表挨拶</a>
         <a href="company.html">会社概要</a>
+        <a href="https://zenn.dev/cc_systems" target="_blank" rel="noopener">Zenn</a>
       </div>
     </div>
   </footer>
